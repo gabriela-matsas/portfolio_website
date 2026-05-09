@@ -1,0 +1,294 @@
+/* ==========================================
+   1. GERAL E FUNDO (BODY)
+   ========================================== */
+body {
+    min-height: 100vh; /* Permite que o fundo cresça com o conteúdo */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at center, 
+        #CBAB80 5%,   /* cor da parede */
+        #DD3684 20%,  /* magenta */
+        #CA7ECE 50%,  /* lilás */
+        #C178B3 75%,  /* rosa médio */
+        #D9A79C 90%,  /* salmão */
+        pink 100%     /* cor da navbar */
+    );
+}
+
+/* Reset básico para links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================
+   2. NAVBAR
+   ========================================== */
+nav {
+    position: relative;
+    background-color: pink;
+    height: 50px;
+    padding: 0 80px;
+    z-index: 100;
+}
+
+nav .logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 20px;
+}
+
+.nav-button {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    padding: 0px 12px;
+    font-size: 0.8rem;
+    background-color: rgb(247, 242, 242);
+    color: black;
+    border-radius: 12px;
+    font-weight: 300;
+    transition: background 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #ff85c1;
+    color: white;
+}
+
+/* ==========================================
+   3. HOME (FOTO E CONEXÕES)
+   ========================================== */
+#contentParent {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+    justify-content: center;
+    align-items: center;
+}
+
+#foto {
+    background-image: url('assets/unnamed (6).jpg');
+    height: 255px;
+    width: 255px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+    border: 5px solid #CBAB80;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 33px 0px 27px 0px;
+    text-align: center;
+}
+
+/* BOTÕES SOCIAIS */
+.buttonSocial {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    width: 255px;
+    height: 40px;
+    background-color: #00000020;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 27px;
+    cursor: pointer;
+    padding-left: 35px;
+    border: none;
+    transition: 0.3s;
+}
+
+.buttonSocial img {
+    height: 24px !important;
+    width: 24px !important;
+    object-fit: contain;
+    flex-shrink: 0; /* Impede de esticar */
+}
+
+.buttonSocial p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.linkedInbutton {
+    background-color: #00000070;
+}
+
+.buttonSocial:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+/* ==========================================
+   4. ABOUT ME (GLASS CARD)
+   ========================================== */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 24px;
+    padding: 50px;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.glass-card h1 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.glass-card p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding-left: 0 !important; /* Remove o padding de 15px das regras gerais */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+}
+
+.glass-card strong {
+    color: #ffffff;
+    background: #DD3684; /* Magenta da camiseta */
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* TAGS DE LINGUAGENS */
+.tech-tags {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tech-tags span {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.highlight-tag {
+    border-color: #61dafb !important;
+    color: #61dafb !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Container da imagem do projeto */
+.project-image {
+    width: 100%;           /* Ocupa toda a largura do card do projeto */
+    height: 400px;         /* Altura fixa para todos os projetos ficarem iguais */
+    overflow: hidden;      /* Esconde o que sobrar da imagem */
+    border-radius: 12px;   /* Arredonda as pontas da foto */
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* A imagem dentro do container */
+.project-image img {
+    width: 100%;           /* Força a largura a bater com o container */
+    height: 100%;          /* Força a altura a bater com o container */
+    object-fit: contain;     /* Faz a mágica: centraliza e corta o excesso sem deformar */
+    object-position: top;  /* Se o print for longo, foca no topo da página */
+    transition: transform 0.5s;
+    margin-bottom: 50px; /* Aumente este valor (ex: 25px ou 30px) para dar mais ar */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Efeito opcional: a foto aumenta um pouco quando passa o mouse */
+.project-item:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-item h3{
+  font-weight: 300;
+}
+
+.project-item p{
+
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+
+.project-image {
+    width: 100%;           
+    /* Removi a altura fixa de 400px para que as duas imagens apareçam inteiras. 
+       Se quiser limitar o tamanho total, use max-height em vez de height. */
+    max-height: 800px;     
+    overflow-y: auto;      /* Se as imagens forem muito grandes, cria uma rolagem interna no card */
+    border-radius: 12px;   
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+    /* Configuração para empilhar */
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;             /* Espaço entre a primeira e a segunda imagem */
+}
+
+/* A imagem dentro do container */
+.project-image img {
+    width: 100%;           
+    height: auto;          /* Importante: auto para não achatar a imagem */
+    object-fit: cover;     
+    border-radius: 8px;    
+    transition: transform 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
