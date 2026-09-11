@@ -1,15 +1,13 @@
 # Gabriela Matsas - Portfolio Website
 
-Personal portfolio website built with HTML5 and CSS3 to showcase my projects, background, and transition into the technology field.
-
-<img width="1898" height="911" alt="Captura de tela 2026-05-08 234451" src="https://github.com/user-attachments/assets/1a2e9ca9-d088-46ad-bdf9-384ac4a61bd5" />
+Personal portfolio website built with HTML5 and CSS3 to showcase my projects, background, and transition into the technology field. Content is in Brazilian Portuguese.
 
 ## Live Website
-https://69fe9d7e2956a79c224bad0c--fluffy-baklava-851dc0.netlify.app/
+https://gabrielamatsas.netlify.app/
 
 ## About the Project
 
-This portfolio was created to present my work, technical learning journey, and interests in Front-end Development, Developer Education, and Web Technologies.
+This portfolio presents my work, academic background, and journey as a full stack developer — from a degree in Music to studying Análise e Desenvolvimento de Sistemas and interning in the tech sector at zMatch.
 
 The website includes:
 
@@ -17,8 +15,6 @@ The website includes:
 - About Me section
 - Projects showcase
 - Contact page
-
-The project was developed as part of my studies in front-end development and focuses on responsive layouts, clean structure, and modern UI styling.
 
 ---
 
@@ -35,7 +31,7 @@ The project was developed as part of my studies in front-end development and foc
 ## Features
 
 - Responsive navigation bar
-- Glassmorphism-inspired UI
+- Warm light theme with amber accent
 - Social media integration
 - Project showcase section
 - Contact page
@@ -50,10 +46,11 @@ The project was developed as part of my studies in front-end development and foc
 Main landing page with quick access to LinkedIn and GitHub.
 
 ### About Me
-Introduction about my academic background, transition into tech, and current learning path.
+Academic background, transition into tech, and current studies/internship.
 
 ### Projects
-Showcase of personal projects including:
+Showcase of projects including:
+- Foi a Valery Que Fez (live client project)
 - My Finance
 - Nationalities App
 
@@ -78,5 +75,3 @@ Gabriela Matsas
 
 - GitHub: https://github.com/gabriela-matsas
 - LinkedIn: https://www.linkedin.com/in/gabriela-matsas/
-
-```

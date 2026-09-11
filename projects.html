@@ -1,63 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/cup-of-coffee-icon-4.png">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Projetos | Gabriela Matsas</title>
 </head>
 <body>
-    
 
 <nav>
-        <div class="logo"> Gabriela Matsas </div>
-        <ul>
-                <li><a href="index.html" class="nav-button"> Home</a></li>
-                <li><a href="aboutme.html" class="nav-button"> About Me</a></li>
-                <li><a href="contactme.html" class="nav-button"> Contact Me</a></li>
-                <li><a href="projects.html" class="nav-button"> Projects</a></li>
-    </nav>
-    <main>
-    <div class="glass-card" style="max-width: 850px;"> <h1>My Projects</h1>
-        <p class="subtitle">Practical applications built with HTML, CSS and JavaScript</p>
+    <div class="logo">Gabriela <span>Matsas</span></div>
+    <ul>
+        <li><a href="index.html" class="nav-button">Início</a></li>
+        <li><a href="aboutme.html" class="nav-button">Sobre Mim</a></li>
+        <li><a href="contactme.html" class="nav-button">Contato</a></li>
+        <li><a href="projects.html" class="nav-button active">Projetos</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="glass-card" style="max-width: 900px;">
+        <h1>Meus Projetos</h1>
+        <p class="subtitle">Aplicações práticas construídas com HTML, CSS e JavaScript</p>
 
         <div class="projects-grid">
             <div class="project-item">
                 <div class="project-image">
-                    <img src="assets/myfinanceprtscreen.png" alt="My Finance Project">
+                    <img src="assets/valeryprtscreen.png" alt="Tela do site Foi a Valery Que Fez">
                 </div>
-                <h3>My Finance</h3>
-                <p>A financial control application to manage income and expenses.</p>
-                <button class="nav-button" onclick="window.open('https://github.com/gabriela-matsas/my-finance', '_blank')">View Code</button>
-                <br><br><br>
-                
+                <h3>Foi a Valery Que Fez</h3>
+                <p>Site institucional para a confeitaria caseira da minha mãe, com cardápio completo e canal de encomendas. Publicado e em uso real pelo negócio.</p>
+                <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                    <button class="nav-button" onclick="window.open('https://foiavaleryquefez.netlify.app/', '_blank')">Ver Site</button>
+                    <button class="nav-button" onclick="window.open('https://github.com/gabriela-matsas/foi-a-valery-que-fez', '_blank')">Ver Código</button>
+                </div>
             </div>
 
             <div class="project-item">
                 <div class="project-image">
-                    <img src="assets/nationalitiesprtscreen.png" alt="Nationalities Project">
+                    <img src="assets/myfinanceprtscreen.png" alt="Tela do projeto My Finance">
+                </div>
+                <h3>My Finance</h3>
+                <p>Uma aplicação de controle financeiro para gerenciar receitas e despesas.</p>
+                <button class="nav-button" onclick="window.open('https://github.com/gabriela-matsas/my-finance', '_blank')">Ver Código</button>
+            </div>
+
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="assets/nationalitiesprtscreen.png" alt="Tela do projeto Nationalities">
                 </div>
                 <h3>Nationalities</h3>
-                <p>An interactive project exploring data from different countries, focusing on responsive layout and DOM manipulation.</p>
-                <button class="nav-button" onclick="window.open('https://github.com/gabriela-matsas/nationalities-app', '_blank')">View Code</button>
+                <p>Um projeto interativo que explora dados de diferentes países, com foco em layout responsivo e manipulação do DOM.</p>
+                <button class="nav-button" onclick="window.open('https://github.com/gabriela-matsas/nationalities-app', '_blank')">Ver Código</button>
             </div>
         </div>
 
-            <div>
-                
-                <br><br><br>
-    <h3>And Soon More</h3>
-    <p>More projects and experiments will be published soon as I continue building my skills in front-end development and web technologies.</p>
-</div>
-                
-            </div>
+        <div class="projects-note">
+            <h3>Em breve, mais projetos</h3>
+            <p>Novos projetos e experimentos serão publicados em breve, incluindo aplicações full stack com Java e Spring Boot, à medida que sigo aprimorando minhas habilidades em desenvolvimento web.</p>
+        </div>
     </div>
 </main>
-    
+
 </body>
 </html>
