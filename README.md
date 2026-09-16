@@ -2,10 +2,12 @@
 
 Personal portfolio website built with HTML5 and CSS3 to showcase my projects, background, and transition into the technology field. Content is in Brazilian Portuguese.
 
-![Portfolio home page](assets/screenshot-home.png)
 
 ## Live Website
 https://gabrielamatsas.netlify.app/
+
+<img width="1772" height="891" alt="image" src="https://github.com/user-attachments/assets/ded54738-543d-4b8e-ab28-4c9e338a28d7" />
+
 
 ## About the Project
 
